@@ -12,11 +12,14 @@
             
             <Entry Text="160.0"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                   x:Name="height" />
             
             <Button Text="BMIを計算"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                    x:Name="BMI_Button"
+                    Clicked="BMI_Button_Click"/>
             
         </StackLayout>
     </ContentPage.Content>
