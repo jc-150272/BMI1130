@@ -45,7 +45,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleIdentifier</key>
-	<string>jp.jc21</string>
+	<string>jp.jc21.BMI</string>
 	<key>MinimumOSVersion</key>
 	<string>10.0</string>
 </dict>
