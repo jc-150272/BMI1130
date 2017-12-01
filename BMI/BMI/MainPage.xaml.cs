@@ -19,39 +19,42 @@ namespace BMI
             double dWeight = double.Parse(weight.Text);
 
             double dBMI = dWeight / dHeight / dHeight;
-            string message;
 
-            if(dBMI >= 30.0 )
+            if(dHeight > 3)
             {
-                message = "肥満";
+                dHeight /= 100;
             }
 
-            else if(dBMI >= 25.0)
+            if(dBMI < 18.5 )
             {
-                message = "前肥満";
+                DisplayAlert("BMI",dBMI + ":低体重","OK");
             }
 
-            else if (dBMI >= 18.5)
+            else if(dBMI < 25.0)
             {
-                message = "普通体重";
+                DisplayAlert("BMI", dBMI + ":普通体重", "OK");
             }
 
-            else if (dBMI >= 17.0)
+            else if (dBMI < 30.0)
             {
-                message = "痩せぎみ";
+                DisplayAlert("BMI", dBMI + ":肥満(1度)", "OK");
             }
 
-            else if (dBMI >= 16.0)
+            else if (dBMI < 35.0)
             {
-                message = "痩せ";
+                DisplayAlert("BMI", dBMI + ":肥満(2度)", "OK");
+            }
+
+            else if (dBMI < 40.0)
+            {
+                DisplayAlert("BMI", dBMI + ":肥満(3度)", "OK");
             }
 
             else 
             {
-                message = "痩せすぎ";
+                DisplayAlert("BMI", dBMI + ":肥満(4度)", "OK");
             }
 
-            DisplayAlert("BMI", dBMI+":"+message, "OK");
         }
     }
 }
