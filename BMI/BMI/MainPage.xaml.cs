@@ -18,12 +18,13 @@ namespace BMI
             double dHeight = double.Parse(height.Text);
             double dWeight = double.Parse(weight.Text);
 
-            double dBMI = dWeight / dHeight / dHeight;
-
-            if(dHeight > 3)
+            if (dHeight > 3)
             {
                 dHeight /= 100;
             }
+
+            double dBMI = dWeight / dHeight / dHeight;
+
 
             if(dBMI < 18.5 )
             {

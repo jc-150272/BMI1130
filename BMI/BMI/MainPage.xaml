@@ -18,6 +18,10 @@
                 HorizontalOptions="CenterAndExpand" 
                    x:Name="height" />
 
+            <Label Text="体重を入力してください"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
             <Entry Text="50.0"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" 
